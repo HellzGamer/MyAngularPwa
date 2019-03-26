@@ -1,0 +1,16 @@
+<h2>Clients</h2>
+
+<ul class="heroes">
+  
+  <li *ngFor="let clients of allClients">
+      <a>
+        <span class ="badge"> 
+            Client ID: {{clients.ClientID}} --- 
+          Client Name: {{clients.clientName}} --- 
+          Client Surname: {{clients.clientSurname}} --- 
+          Balance: R{{clients.balance}} --- 
+        Email: {{clients.clientEmail}}
+        </span>
+  </a>
+  </li>
+</ul>
